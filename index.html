@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Flovest Dashboard</title>
+  </head>
+  <body>
+    <aside class="fv-sidenav">
+      <span id="close-menu" class="material-icons"> cancel </span>
+      <header>
+        <a href="index.html">
+          <div class="fv-sidebar-header fv-bb-1">
+            <img class="fv-img-fluid" src="assets/white-logo.svg" alt="" />
+            <h2 class="fv-text-white">Flovest</h2>
+          </div>
+        </a>
+      </header>
+
+      <a href="index.html" class="fv-my-1">
+        <div class="fv-sidebar-nav-item fv-active-sidebar">
+          <span class="material-icons"> dashboard </span>
+          <p>Dashboard</p>
+        </div>
+      </a>
+
+      <div class="fv-sidebar-nav-items-group">
+        <small>crm</small>
+        <ul class="fv-sidebar-nav-items">
+          <a
+            href="#collapseInvestment"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseInvestment"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> trending_up </span>
+              <p>investments</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseInvestment">
+            <a href="investment-category.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Category</p>
+              </li>
+            </a>
+            <a href="investment-companies.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Company</p>
+              </li>
+            </a>
+            <a href="investment-portfolio.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Portfolio</p>
+              </li>
+            </a>
+            <a href="investment-plans.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Plans</p>
+              </li>
+            </a>
+          </div>
+
+          <a
+            href="#collapseSavings"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseSavings"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> style </span>
+              <p>saving groups</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseSavings">
+            <a href="savings-akawo.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Akawo</p>
+              </li>
+            </a>
+            <a href="savings-flo-wallet.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Flo Wallet</p>
+              </li>
+            </a>
+            <a href="savings-target.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Target</p>
+              </li>
+            </a>
+            <a href="savings-safelock.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Safelock</p>
+              </li>
+            </a>
+            <a href="savings-combo.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Combo</p>
+              </li>
+            </a>
+            <a href="savings-flo-dollar.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Flo Dollar</p>
+              </li>
+            </a>
+          </div>
+
+          <a
+            href="#collapseTransactions"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseTransactions"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> trending_up </span>
+              <p>transactions</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseTransactions">
+            <a href="transactions-investment.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Investments</p>
+              </li>
+            </a>
+            <a href="transactions-savings.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Savings</p>
+              </li>
+            </a>
+          </div>
+
+          <a href="customers.html">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> supervisor_account </span>
+              <p>customers</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="fv-sidebar-nav-items-group">
+        <small>support</small>
+        <ul class="fv-sidebar-nav-items">
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> perm_phone_msg </span>
+              <p>ticket</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="fv-sidebar-nav-items-group">
+        <small>staff</small>
+        <ul class="fv-sidebar-nav-items">
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> record_voice_over </span>
+              <p>staff</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> account_balance_wallet </span>
+              <p>wallet</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> message </span>
+              <p>push notification</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="fv-sidebar-nav-items-group">
+        <small>promotion</small>
+        <ul class="fv-sidebar-nav-items">
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> stars </span>
+              <p>promotions</p>
+              <span class="material-icons fv-ml-auto"> chevron_right </span>
+            </li>
+          </a>
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> widgets </span>
+              <p>referrals</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="fv-sidebar-nav-items-group">
+        <a class="fv-align-self-center fv-d-flex fv-w-100" href="#">
+          <div class="fv-sidebar-nav-profile fv-bt-1">
+            <div class="fv-sidebar-nav-image-wrapper">
+              <img src="assets/profile.jpg" alt="" />
+            </div>
+            <div class="fv-sidebar-nav-profile-details">
+              <p>Jane Doe</p>
+              <small>janedoe@gmail.com</small>
+            </div>
+          </div>
+        </a>
+
+        <ul class="fv-sidebar-nav-items">
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> settings </span>
+              <p>settings</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> logout </span>
+              <p>logout</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="fv-content">
+      <nav class="fv-navbar">
+        <div id="sidenav-menu" class="fv-menu-button">
+          <span class="material-icons"> menu </span>
+        </div>
+
+        <form action="#" class="fv-nav-searchbar">
+          <div class="fv-form-group">
+            <div class="fv-form-input">
+              <input
+                class="fv-input"
+                type="text"
+                placeholder="Search here..."
+              />
+              <span class="material-icons fv-input-right-icon"> search </span>
+            </div>
+          </div>
+        </form>
+
+        <div class="fv-main-nav-right-items">
+          <div class="fv-main-nav-icon-wrapper">
+            <span class="material-icons fv-nav-icon"> mail </span>
+            <span class="fv-icon-badge fv-badge-danger">23</span>
+          </div>
+
+          <div class="fv-main-nav-icon-wrapper">
+            <span class="material-icons fv-nav-icon"> notifications </span>
+            <span class="fv-icon-badge fv-badge-success">15</span>
+          </div>
+
+          <div class="fv-main-nav-profile">
+            <img src="assets/profile.jpg" alt="" />
+            <div class="fv-main-nav-profile-details">
+              <p>Jane Doe</p>
+              <small>Super Admin</small>
+              <span class="material-icons"> check_circle </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="fv-section-content">
+        <div>
+          <h3>Good Morning, Jane</h3>
+          <p>Welcome Admin.</p>
+        </div>
+
+        <div class="fv-item-card fv-ml-auto">
+          <div class="fv-item-card-icon">
+            <span class="material-icons"> people </span>
+          </div>
+
+          <div class="fv-item-card-content">
+            <p>Registered User</p>
+            <h3 class="fv-text-gray-4">2,321</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="fv-cards-section">
+        <h5 class="fv-mb-2">Dashboard Overview</h5>
+        <div class="fv-item-cards-wrapper">
+          <div class="fv-item-card fv-py-3">
+            <div class="fv-item-card-content">
+              <p class="fv-mb-2">Total Balance</p>
+              <h3 class="fv-text-primary">
+                #27,321.00
+                <span class="fv-text-success">2.5%</span>
+                <span class="material-icons fv-text-success"> north </span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="fv-item-card fv-py-3">
+            <div class="fv-item-card-content">
+              <p class="fv-mb-2">Total Withdrawal</p>
+              <h3 class="fv-text-primary">
+                #20,199.00
+                <span class="fv-text-success">0.5%</span>
+                <span class="material-icons fv-text-success"> north </span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="fv-item-card fv-py-3">
+            <div class="fv-item-card-content">
+              <p class="fv-mb-2">Total Savings</p>
+              <h3 class="fv-text-primary">
+                #1,100.00
+                <span class="fv-text-danger">-1.5%</span>
+                <span class="material-icons fv-text-danger"> south </span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="fv-item-card fv-py-3">
+            <div class="fv-item-card-content">
+              <p class="fv-mb-2">Total Investment</p>
+              <h3 class="fv-text-primary">
+                #27,632.00
+                <span class="fv-text-success">2.5%</span>
+                <span class="material-icons fv-text-success"> north </span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="fv-item-card fv-py-3">
+            <div class="fv-item-card-content">
+              <p class="fv-mb-2">Wallet Balance</p>
+              <h3 class="fv-text-primary">
+                #20,199.00
+                <span class="fv-text-success">0.5%</span>
+                <span class="material-icons fv-text-success"> north </span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="fv-item-card fv-py-3">
+            <div class="fv-item-card-content">
+              <p class="fv-mb-2">Dollar Balance</p>
+              <h3 class="fv-text-primary">
+                $1,121.00
+                <span class="fv-text-danger">-1.5%</span>
+                <span class="material-icons fv-text-danger"> north </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="fv-charts-section">
+        <div class="fv-revenue-chart">
+          <h5 class="fv-mb-2">Revenue Report</h5>
+          <canvas height="325" id="revenueChart" class="fv-chart-card"></canvas>
+        </div>
+        <div class="fv-efficiency-chart">
+          <h5 class="fv-mb-2">Efficiency</h5>
+          <canvas id="efficiencyChart" class="fv-chart-card"></canvas>
+        </div>
+      </section>
+
+     
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/graph.js"></script>
+  </body>
+</html>
