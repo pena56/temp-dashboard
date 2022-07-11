@@ -1,3 +1,6 @@
+const htmlDocument = document.querySelector("#htmlBody");
+const isDarkTheme = htmlDocument.dataset.theme === "dark";
+
 const ctxRevenue = document.getElementById("revenueChart").getContext("2d");
 const ctxEfficiency = document
   .getElementById("efficiencyChart")
@@ -9,12 +12,12 @@ const revenueChartConfig = {
     {
       label: "Pay in",
       data: [480, 380, 300, 140, 110, 450],
-      backgroundColor: "#012168",
+      backgroundColor: isDarkTheme ? "#6bc048" : "#012168",
     },
     {
       label: "Pay out",
       data: [180, 120, 465, 270, 190, 250],
-      backgroundColor: "#2f80ed",
+      backgroundColor: isDarkTheme ? "#43a750" : "#2f80ed",
     },
   ],
 };
@@ -23,8 +26,13 @@ const efficiencyChartConfig = {
   labels: ["Pay in", "Pay out", "Profit"],
   datasets: [
     {
-      data: [300, 50, 100],
-      backgroundColor: ["#012168", "#002082", "#2f80ed"],
+      data: [200, 50, 100, 400],
+      backgroundColor: [
+        isDarkTheme ? "#6bc048" : "#012168",
+        isDarkTheme ? "#27ae60" : "#002082",
+        isDarkTheme ? "#43a750" : "#2f80ed",
+        isDarkTheme ? "#1d1d1d" : "#FAFAFA",
+      ],
       hoverOffset: 20,
     },
   ],

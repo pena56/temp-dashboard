@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" id="htmlBody">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -9,48 +9,49 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/apple-touch-icon.png"
+      href="../assets/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon-32x32.png"
+      href="../assets/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/favicon-16x16.png"
+      href="../assets/favicon-16x16.png"
     />
-    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="manifest" href="../assets/site.webmanifest" />
     <!-- Material Icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Flovest Dashboard</title>
   </head>
   <body>
+    <!-- Side bar -->
     <aside class="fv-sidenav">
       <span id="close-menu" class="material-icons"> cancel </span>
       <header>
         <a href="index.html">
           <div class="fv-sidebar-header fv-bb-1">
-            <img class="fv-img-fluid" src="assets/white-logo.svg" alt="" />
+            <img class="fv-img-fluid" src="../assets/white-logo.svg" alt="" />
             <h2 class="fv-text-white">Flovest</h2>
           </div>
         </a>
       </header>
 
       <a href="index.html" class="fv-my-1">
-        <div class="fv-sidebar-nav-item fv-active-sidebar">
+        <div class="fv-sidebar-nav-item">
           <span class="material-icons"> dashboard </span>
           <p>Dashboard</p>
         </div>
@@ -76,25 +77,25 @@
             </li>
           </a>
           <div class="collapse" id="collapseInvestment">
-            <a href="investments/categories.html">
+            <a href="categories.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Category</p>
               </li>
             </a>
-            <a href="investments/companies.html">
+            <a href="companies.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Company</p>
               </li>
             </a>
-            <a href="investments/portfolio.html">
+            <a href="portfolio.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Portfolio</p>
               </li>
             </a>
-            <a href="investments/plans.html">
+            <a href="plans.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Plans</p>
@@ -110,7 +111,7 @@
             aria-expanded="false"
             class="collapsed"
           >
-            <li class="fv-sidebar-nav-item">
+            <li class="fv-sidebar-nav-item fv-active-sidebar">
               <span class="material-icons"> style </span>
               <p>saving groups</p>
               <span class="material-icons fv-ml-auto fv-dropdown-icon">
@@ -119,37 +120,39 @@
             </li>
           </a>
           <div class="collapse" id="collapseSavings">
-            <a href="savings/akawo.html">
-              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+            <a href="akawo.html">
+              <li
+                class="fv-sidebar-nav-item fv-sidebar-dropdown-item fv-dropdown-item-active"
+              >
                 <span class="material-icons"> hdr_strong </span>
                 <p>Akawo</p>
               </li>
             </a>
-            <a href="savings/flowallet.html">
+            <a href="flowallet.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Flo Wallet</p>
               </li>
             </a>
-            <a href="savings/target.html">
+            <a href="target.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Target</p>
               </li>
             </a>
-            <a href="savings/safelock.html">
+            <a href="safelock.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Safelock</p>
               </li>
             </a>
-            <a href="savings/combo.html">
+            <a href="combo.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Combo</p>
               </li>
             </a>
-            <a href="savings/flodollar.html">
+            <a href="flodollar.html">
               <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
                 <span class="material-icons"> hdr_strong </span>
                 <p>Flo Dollar</p>
@@ -323,7 +326,7 @@
         <a class="fv-align-self-center fv-d-flex fv-w-100" href="#">
           <div class="fv-sidebar-nav-profile fv-bt-1">
             <div class="fv-sidebar-nav-image-wrapper">
-              <img src="assets/profile.jpg" alt="" />
+              <img src="../assets/profile.jpg" alt="" />
             </div>
             <div class="fv-sidebar-nav-profile-details">
               <p>Jane Doe</p>
@@ -350,6 +353,7 @@
     </aside>
 
     <main class="fv-content">
+      <!-- navbar -->
       <nav class="fv-navbar">
         <div>
           <div id="sidenav-menu" class="fv-menu-button">
@@ -381,7 +385,7 @@
             </div>
 
             <div class="fv-main-nav-profile">
-              <img src="assets/profile.jpg" alt="" />
+              <img src="../assets/profile.jpg" alt="" />
               <div class="fv-main-nav-profile-details">
                 <p>Jane Doe</p>
                 <small>Super Admin</small>
@@ -404,184 +408,363 @@
         </form>
       </nav>
 
+      <!-- start page content -->
+      <section class="fv-section-content">
+        <a href="akawo.html">
+          <span class="material-icons"> keyboard_backspace </span>
+        </a>
+      </section>
 
       <section class="fv-section-content">
-        <div>
-          <h3>Good Morning, Jane</h3>
-          <p>Welcome Admin.</p>
-        </div>
+        <div class="fv-table-actions">
+          <div class="fv-action-head">
+            <h5>Akawo Savings</h5>
 
-        <div class="fv-item-card fv-ml-auto">
-          <div class="fv-item-card-icon">
-            <span class="material-icons"> people </span>
-          </div>
+            <div class="fv-action-btns">
+              <button
+                class="fv-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#topUpForm"
+                aria-controls="topUpForm"
+              >
+                <span class="material-icons"> add </span>
+                Top Up
+              </button>
 
-          <div class="fv-item-card-content">
-            <p>Registered User</p>
-            <h3 class="fv-text-gray-4">2,321</h3>
-          </div>
-        </div>
-      </section>
-
-      <section class="fv-cards-section">
-        <h5 class="fv-mb-2">Dashboard Overview</h5>
-        <div class="fv-item-cards-wrapper">
-          <div class="fv-item-card fv-py-3">
-            <div class="fv-item-card-content">
-              <p class="fv-mb-2">Total Balance</p>
-              <h3 class="fv-text-primary">
-                #27,321.00
-                <span class="fv-text-success">2.5%</span>
-                <span class="material-icons fv-text-success"> north </span>
-              </h3>
-            </div>
-          </div>
-
-          <div class="fv-item-card fv-py-3">
-            <div class="fv-item-card-content">
-              <p class="fv-mb-2">Total Withdrawal</p>
-              <h3 class="fv-text-primary">
-                #20,199.00
-                <span class="fv-text-success">0.5%</span>
-                <span class="material-icons fv-text-success"> north </span>
-              </h3>
-            </div>
-          </div>
-
-          <div class="fv-item-card fv-py-3">
-            <div class="fv-item-card-content">
-              <p class="fv-mb-2">Total Savings</p>
-              <h3 class="fv-text-primary">
-                #1,100.00
-                <span class="fv-text-danger">-1.5%</span>
-                <span class="material-icons fv-text-danger"> south </span>
-              </h3>
-            </div>
-          </div>
-
-          <div class="fv-item-card fv-py-3">
-            <div class="fv-item-card-content">
-              <p class="fv-mb-2">Total Investment</p>
-              <h3 class="fv-text-primary">
-                #27,632.00
-                <span class="fv-text-success">2.5%</span>
-                <span class="material-icons fv-text-success"> north </span>
-              </h3>
-            </div>
-          </div>
-
-          <div class="fv-item-card fv-py-3">
-            <div class="fv-item-card-content">
-              <p class="fv-mb-2">Wallet Balance</p>
-              <h3 class="fv-text-primary">
-                #20,199.00
-                <span class="fv-text-success">0.5%</span>
-                <span class="material-icons fv-text-success"> north </span>
-              </h3>
-            </div>
-          </div>
-
-          <div class="fv-item-card fv-py-3">
-            <div class="fv-item-card-content">
-              <p class="fv-mb-2">Dollar Balance</p>
-              <h3 class="fv-text-primary">
-                $1,121.00
-                <span class="fv-text-danger">-1.5%</span>
-                <span class="material-icons fv-text-danger"> north </span>
-              </h3>
+              <button
+                class="fv-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#addAkawoForm"
+                aria-controls="addAkawoForm"
+              >
+                <span class="material-icons"> add </span>
+                Add Akawo
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <hr />
+      <section class="fv-section-content fv-align-start fv-justify-between">
+        <div class="fv-profile-card">
+          <img class="fv-img-rounded" src="../assets/profile.jpg" alt="" />
 
-      <section class="fv-charts-section">
-        <div class="fv-revenue-chart">
-          <h5 class="fv-mb-2">Revenue Report</h5>
-          <canvas id="revenueChart" class="fv-chart-card"></canvas>
+          <div class="fv-profile-card-section fv-mt-3">
+            <p class="fv-profile-card-label">Name</p>
+            <p>Jane Doe</p>
+          </div>
+
+          <div class="fv-profile-card-section">
+            <p class="fv-profile-card-label">User ID</p>
+            <p>Flo123456</p>
+          </div>
+
+          <div class="fv-profile-card-section">
+            <p class="fv-profile-card-label">Email</p>
+            <p>janedoe@gmail.com</p>
+          </div>
+
+          <div class="fv-profile-card-section">
+            <p class="fv-profile-card-label">Wallet ID</p>
+            <p>Providus Bank: 3678277583</p>
+          </div>
         </div>
-        <div class="fv-efficiency-chart">
-          <h5 class="fv-mb-2">Efficiency</h5>
-          <canvas id="efficiencyChart" class="fv-chart-card"></canvas>
+        <div class="fv-data-card">
+          <div class="fv-data-card-section">
+            <div>
+              <p class="fv-data-card-label">date created</p>
+              <p>June 22, 2024</p>
+            </div>
+
+            <div class="fv-data-card-right">
+              <p class="fv-data-card-label">next withdrawal</p>
+              <p>June 22, 2024</p>
+            </div>
+          </div>
+
+          <div class="fv-data-card-section">
+            <div>
+              <p class="fv-data-card-label">accured interest</p>
+              <p>#33</p>
+            </div>
+
+            <div class="fv-data-card-right">
+              <p class="fv-data-card-label">interest</p>
+              <p>
+                <label class="fv-switch">
+                  <input type="checkbox" />
+                  <span class="fv-slider"></span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+          <div class="fv-data-card-section">
+            <div>
+              <p class="fv-data-card-label">total saved</p>
+              <p>#3000</p>
+            </div>
+
+            <div class="fv-data-card-right">
+              <p class="fv-data-card-label">status</p>
+              <span class="fv-status-badge fv-status-badge-success">
+                Active
+              </span>
+            </div>
+          </div>
+
+          <div class="fv-data-card-section">
+            <div>
+              <p class="fv-data-card-label">saving frequency</p>
+              <p>#3000 monthly</p>
+            </div>
+
+            <div class="fv-data-card-right">
+              <p class="fv-data-card-label">mute/unmute</p>
+              <p>
+                <label class="fv-switch">
+                  <input type="checkbox" />
+                  <span class="fv-slider"></span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+          <div class="fv-data-card-section">
+            <div>
+              <p class="fv-data-card-label">autosave</p>
+              <label class="fv-switch">
+                <input type="checkbox" />
+                <span class="fv-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <button
+            class="fv-btn fv-btn-full"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#withdrawForm"
+            aria-controls="withdrawForm"
+          >
+            WITHDRAW FUNDS
+          </button>
         </div>
       </section>
 
-      <section class="fv-cards-section">
-        <h5 class="fv-mb-2">Recent Activities</h5>
-        <div class="table-responsive">
-            <table class="table table-borderless">
-                <thead>
-                  <tr>
-                    <th scope="col">
-                        <input type="checkbox" />
-                      </th>
-                      <th scope="col">Transactions</th>
-                      <th scope="col">Amount</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox" /></td>
-                        <td>transfer from John doe to Jane doe</td>
-                        <td>#2,000.00</td>
-                        <td>
-                          <span class="fv-status-badge fv-status-badge-success">
-                            Success
-                          </span>
-                        </td>
-                        <td>Jun 22, 2024</td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox" /></td>
-                        <td>transfer from John doe to Jane doe</td>
-                        <td>#2,000.00</td>
-                        <td>
-                          <span class="fv-status-badge fv-status-badge-warning">
-                            Pending
-                          </span>
-                        </td>
-                        <td>Jun 22, 2024</td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox" /></td>
-                        <td>transfer from John doe to Jane doe</td>
-                        <td>#2,000.00</td>
-                        <td>
-                          <span class="fv-status-badge fv-status-badge-success">
-                            Success
-                          </span>
-                        </td>
-                        <td>Jun 22, 2024</td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox" /></td>
-                        <td>transfer from John doe to Jane doe</td>
-                        <td>#2,000.00</td>
-                        <td>
-                          <span class="fv-status-badge fv-status-badge-danger">
-                            Failed
-                          </span>
-                        </td>
-                        <td>Jun 22, 2024</td>
-                      </tr>
-                </tbody>
-              </table>
+      <!-- offcanvas section -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="topUpForm"
+        aria-labelledby="topUpFormLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="fv-text-primary">Top Up Akawo Savings</h5>
         </div>
+        <div class="offcanvas-body">
+          <p class="fv-text-primary fv-my-1">Top Up Akawo Savings for User</p>
 
-      </section>
+          <form class="fv-form fv-mt-1" action="#">
+            <div class="fv-form-group">
+              <label for="">User ID</label>
+              <div class="fv-form-input">
+                <input
+                  class="fv-input fv-pl-1"
+                  type="text"
+                  placeholder="Enter User Id"
+                />
+              </div>
+            </div>
 
-     
+            <div class="fv-form-group">
+              <label for="">Amount</label>
+              <div class="fv-form-input">
+                <input class="fv-input fv-pl-1" type="text" placeholder="#" />
+              </div>
+            </div>
 
+            <div class="fv-d-flex fv-my-2 fv-gap-1 fv-w-100">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                class="fv-btn fv-btn-full fv-btn-outline"
+              >
+                CANCEL
+              </button>
+              <button class="fv-btn fv-btn-full">TOP UP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="addAkawoForm"
+        aria-labelledby="addAkawoFormLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="fv-text-primary">Add New Akawo Savings</h5>
+        </div>
+        <div class="offcanvas-body">
+          <p class="fv-text-primary fv-my-1">Create Savings for User</p>
+
+          <form class="fv-form fv-mt-1" action="#">
+            <div class="fv-form-group">
+              <label for="">User ID</label>
+              <div class="fv-form-input">
+                <input
+                  class="fv-input fv-pl-1"
+                  type="text"
+                  placeholder="Enter User Id"
+                />
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">Preferred Saving Time</label>
+              <div class="fv-form-input">
+                <select name="" id="">
+                  <option value="">Select Preferred Time</option>
+                  <option value="">Agriculture</option>
+                  <option value="">Transportation</option>
+                  <option value="">Real Estate</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">Amount to save Per Time</label>
+              <div class="fv-form-input">
+                <input class="fv-input fv-pl-1" type="text" placeholder="#" />
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">Day of the Month</label>
+              <div class="fv-form-input">
+                <select name="" id="">
+                  <option value="">Select day of the month</option>
+                  <option value="">Agriculture</option>
+                  <option value="">Transportation</option>
+                  <option value="">Real Estate</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">Preferred Time</label>
+              <div class="fv-form-input">
+                <input
+                  class="fv-input fv-pl-1"
+                  type="time"
+                  placeholder="Select Time"
+                />
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">Start Date</label>
+              <div class="fv-form-input">
+                <input
+                  class="fv-input fv-pl-1"
+                  type="date"
+                  placeholder="Select Date"
+                />
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">User Funding Source (Optional)</label>
+              <div class="fv-form-input">
+                <select name="" id="">
+                  <option value="">Select Funding Source</option>
+                  <option value="">Fixed Income</option>
+                  <option value="">Fixed Income</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="fv-d-flex fv-my-2 fv-gap-1 fv-w-100">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                class="fv-btn fv-btn-full fv-btn-outline"
+              >
+                CANCEL
+              </button>
+              <button class="fv-btn fv-btn-full">CREATE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="withdrawForm"
+        aria-labelledby="withdrawFormLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="fv-text-primary">Withdraw</h5>
+        </div>
+        <div class="offcanvas-body">
+          <p class="fv-text-primary fv-my-1">Help user withdraw funds</p>
+
+          <form class="fv-form fv-mt-1" action="#">
+            <div class="fv-form-group">
+              <label for="">Wallet ID</label>
+              <div class="fv-form-input">
+                <input
+                  class="fv-input fv-pl-1"
+                  type="text"
+                  placeholder="Enter User Bank Account"
+                />
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">User ID</label>
+              <div class="fv-form-input">
+                <input
+                  class="fv-input fv-pl-1"
+                  type="text"
+                  placeholder="Enter User Id"
+                />
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">Amount</label>
+              <div class="fv-form-input">
+                <input class="fv-input fv-pl-1" type="text" placeholder="#" />
+              </div>
+            </div>
+
+            <div class="fv-d-flex fv-my-2 fv-gap-1 fv-w-100">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                class="fv-btn fv-btn-full fv-btn-outline"
+              >
+                CANCEL
+              </button>
+              <button class="fv-btn fv-btn-full">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end page content -->
+    </main>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- ChartJS -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
-
-    <script src="js/scripts.js"></script>
-    <script src="js/graph.js"></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

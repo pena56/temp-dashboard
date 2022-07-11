@@ -3,10 +3,28 @@ function toggleAsideContainer() {
   asideContainer.classList.toggle("fv-aside-shown");
 }
 
+function selectSavingsTypeOnChange() {
+  let savingsType = savingsTypeSelect.value;
+  let currentForm = document.querySelector(".fv-savings-form-selected");
+  if (savingsType) {
+    if (currentForm) {
+      currentForm.classList.remove("fv-savings-form-selected");
+    }
+    let selectedForm = document.querySelector(
+      `[data-savings-form=${savingsType}]`
+    );
+
+    selectedForm.classList.add("fv-savings-form-selected");
+  } else {
+    return;
+  }
+}
+
 let tableTabs = document.querySelectorAll(".fv-table-tab");
 let sidebarMenu = document.getElementById("sidenav-menu");
 let sideMenu = document.querySelector(".fv-sidenav");
 let closeMenu = document.getElementById("close-menu");
+let savingsTypeSelect = document.getElementById("savingsTypeSelect");
 
 sidebarMenu.addEventListener("click", () => {
   sideMenu.classList.toggle("fv-show-sidenav");
