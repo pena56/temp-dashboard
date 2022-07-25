@@ -1,5 +1,5 @@
-const htmlDocument = document.querySelector("#htmlBody");
-const isDarkTheme = htmlDocument.dataset.theme === "dark";
+const htmlDoc = document.querySelector("#htmlBody");
+const isDarkTheme = htmlDoc.dataset.theme === "dark";
 
 const ctxRevenue = document.getElementById("revenueChart").getContext("2d");
 const ctxEfficiency = document

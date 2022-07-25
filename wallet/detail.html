@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dar">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/site.webmanifest" />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Flovest Dashboard</title>
+  </head>
+  <body>
+    <!-- Side bar -->
+    <aside class="fv-sidenav">
+      <span id="close-menu" class="material-icons"> cancel </span>
+      <header>
+        <a href="../index.html">
+          <div class="fv-sidebar-header fv-bb-1">
+            <img class="fv-img-fluid" src="../assets/white-logo.svg" alt="" />
+            <h2 class="fv-text-white">Flovest</h2>
+          </div>
+        </a>
+      </header>
+
+      <a href="../index.html" class="fv-my-1">
+        <div class="fv-sidebar-nav-item">
+          <span class="material-icons"> dashboard </span>
+          <p>Dashboard</p>
+        </div>
+      </a>
+
+      <div class="fv-sidebar-nav-items-group">
+        <small>crm</small>
+        <ul class="fv-sidebar-nav-items">
+          <a
+            href="#collapseInvestment"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseInvestment"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> trending_up </span>
+              <p>investments</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseInvestment">
+            <a href="../investments/categories.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Category</p>
+              </li>
+            </a>
+            <a href="../investments/companies.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Company</p>
+              </li>
+            </a>
+            <a href="../investments/portfolio.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Portfolio</p>
+              </li>
+            </a>
+            <a href="../investments/plans.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Plans</p>
+              </li>
+            </a>
+          </div>
+
+          <a
+            href="#collapseSavings"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseSavings"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item ">
+              <span class="material-icons"> style </span>
+              <p>saving groups</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseSavings">
+            <a href="../savings/akawo.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Akawo</p>
+              </li>
+            </a>
+            <a href="../savings/flowallet.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Flo Wallet</p>
+              </li>
+            </a>
+            <a href="../savings/target.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Target</p>
+              </li>
+            </a>
+            <a href="../savings/safelock.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Safelock</p>
+              </li>
+            </a>
+            <a href="../savings/combo.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Combo</p>
+              </li>
+            </a>
+            <a href="../savings/flodollar.html">
+              <li
+                class="fv-sidebar-nav-item fv-sidebar-dropdown-item "
+              >
+                <span class="material-icons"> hdr_strong </span>
+                <p>Flo Dollar</p>
+              </li>
+            </a>
+          </div>
+
+          <a
+            href="#collapseTransactions"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseTransactions"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> trending_up </span>
+              <p>transactions</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseTransactions">
+            <a href="../transactions/investment.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item ">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Investments</p>
+              </li>
+            </a>
+            <a href="../transactions/savings.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Savings</p>
+              </li>
+            </a>
+            <a href="../transactions/earnings.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item ">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Earnings</p>
+              </li>
+            </a>
+            <a href="../transactions/withdrawals.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item ">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Withdrawals</p>
+              </li>
+            </a>
+            <a href="../transactions/wallet.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Wallet</p>
+              </li>
+            </a>
+          </div>
+
+          <a href="../customers/index.html">
+            <li class="fv-sidebar-nav-item ">
+              <span class="material-icons"> supervisor_account </span>
+              <p>customers</p>
+            </li>
+          </a>
+
+          <a
+            href="#collapseWithdrawal"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseWithdrawal"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> eject </span>
+              <p>withdrawal</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseWithdrawal">
+            <a href="../withdrawals/all.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>All</p>
+              </li>
+            </a>
+            <a href="../withdrawals/approved.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Approved</p>
+              </li>
+            </a>
+            <a href="../withdrawals/pending.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Require Approval</p>
+              </li>
+            </a>
+            <a href="../withdrawals/cancelled.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Cancelled</p>
+              </li>
+            </a>
+            <a href="../withdrawals/failed.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Failed</p>
+              </li>
+            </a>
+          </div>
+        </ul>
+      </div>
+
+      <div class="fv-sidebar-nav-items-group">
+        <small>support</small>
+        <ul class="fv-sidebar-nav-items">
+          <a href="../tickets/index.html">
+            <li class="fv-sidebar-nav-item ">
+              <span class="material-icons"> perm_phone_msg </span>
+              <p>ticket</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="fv-sidebar-nav-items-group">
+        <small>staff</small>
+        <ul class="fv-sidebar-nav-items">
+          <a href="../staff/index.html">
+            <li class="fv-sidebar-nav-item ">
+              <span class="material-icons"> record_voice_over </span>
+              <p>staff</p>
+            </li>
+          </a>
+
+          <a
+            href="#collapseWallet"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseWallet"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item fv-active-sidebar">
+              <span class="material-icons"> account_balance_wallet </span>
+              <p>wallet</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseWallet">
+            <a href="../wallet/index.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item fv-dropdown-item-active">
+                <span class="material-icons"> hdr_strong </span>
+                <p>All Wallet</p>
+              </li>
+            </a>
+            <a href="../wallet/request.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Limit Request</p>
+              </li>
+            </a>
+          </div>
+
+          <a
+            href="#collapseNotification"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseNotification"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> message </span>
+              <p>push notifications</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseNotification">
+            <a href="../notifications/push.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Notification</p>
+              </li>
+            </a>
+            <a href="../notifications/email.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Email</p>
+              </li>
+            </a>
+          </div>
+        </ul>
+      </div>
+
+      <div class="fv-sidebar-nav-items-group">
+        <small>promotion</small>
+        <ul class="fv-sidebar-nav-items">
+          <a
+            href="#collapsePromotions"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapsePromotions"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> stars </span>
+              <p>promotions</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapsePromotions">
+            <a href="../promos/ambassadors.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Ambassadors</p>
+              </li>
+            </a>
+            <a href="../promos/referrals.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Flash referrals</p>
+              </li>
+            </a>
+          </div>
+
+          <a href="../referrals/index.html">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> widgets </span>
+              <p>referrals</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div class="fv-sidebar-nav-items-group">
+        <a
+          class="fv-align-self-center fv-d-flex fv-w-100"
+          href="../profile.html"
+        >
+          <div class="fv-sidebar-nav-profile">
+            <div class="fv-sidebar-nav-image-wrapper">
+              <img src="../assets/profile.jpg" alt="" />
+            </div>
+            <div class="fv-sidebar-nav-profile-details">
+              <p>Jane Doe</p>
+              <small>janedoe@gmail.com</small>
+            </div>
+          </div>
+        </a>
+
+        <ul class="fv-sidebar-nav-items">
+          <a
+            href="#collapseSettings"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-controls="collapseSettings"
+            aria-expanded="false"
+            class="collapsed"
+          >
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> settings </span>
+              <p>settings</p>
+              <span class="material-icons fv-ml-auto fv-dropdown-icon">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <div class="collapse" id="collapseSettings">
+            <a href="../settings/system.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>System Settings</p>
+              </li>
+            </a>
+            <a href="../settings/site.html">
+              <li class="fv-sidebar-nav-item fv-sidebar-dropdown-item">
+                <span class="material-icons"> hdr_strong </span>
+                <p>Site Settings</p>
+              </li>
+            </a>
+          </div>
+
+          <a href="#">
+            <li class="fv-sidebar-nav-item">
+              <span class="material-icons"> logout </span>
+              <p>logout</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="fv-sidebar-nav-items-group">
+        <div
+          class="fv-sidebar-nav-item"
+        >
+          <div class="fv-d-flex fv-align-center fv-justify-between fv-w-100">
+            <p class="fv-text-bold">Dark Mode</p>
+            <label class="fv-switch">
+              <input type="checkbox" id="fv-theme-selector" onchange="toggleTheme()" />
+              <span class="fv-slider"></span>
+            </label>
+          </div>
+        </div>
+
+    </aside>
+
+    <main class="fv-content">
+      <!-- navbar -->
+      <nav class="fv-navbar">
+        <div>
+          <div id="sidenav-menu" class="fv-menu-button">
+            <span class="material-icons"> menu </span>
+          </div>
+
+          <form action="#" class="fv-nav-searchbar">
+            <div class="fv-form-group">
+              <div class="fv-form-input">
+                <input
+                  class="fv-input"
+                  type="text"
+                  placeholder="Search here..."
+                />
+                <span class="material-icons fv-input-right-icon"> search </span>
+              </div>
+            </div>
+          </form>
+
+          <div class="fv-main-nav-right-items">
+            <div class="fv-main-nav-icon-wrapper">
+              <span class="material-icons fv-nav-icon"> mail </span>
+              <span class="fv-icon-badge fv-badge-danger">23</span>
+            </div>
+
+            <div class="fv-main-nav-icon-wrapper">
+              <span class="material-icons fv-nav-icon"> notifications </span>
+              <!-- <span class="fv-icon-badge fv-badge-success">15</span> -->
+            </div>
+
+            <div class="fv-main-nav-profile">
+              <img src="../assets/profile.jpg" alt="" />
+              <div class="fv-main-nav-profile-details">
+                <p>Jane Doe</p>
+                <small>Super Admin</small>
+                <span class="material-icons"> check_circle </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="fv-section-content">
+        <form action="#" class="fv-mobile-nav-searchbar">
+          <div class="fv-form-group">
+            <div class="fv-form-input">
+              <input
+                class="fv-input"
+                type="text"
+                placeholder="Search here..."
+              />
+              <span class="material-icons fv-input-right-icon"> search </span>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- start page content -->
+      <section class="fv-section-content">
+        <a href="index.html">
+          <span class="material-icons"> keyboard_backspace </span>
+        </a>
+      </section>
+
+      <section class="fv-section-content">
+        <div class="fv-table-actions">
+          <div class="fv-action-head">
+            <h5>Wallet</h5>
+
+            <div class="fv-action-btns">
+              <button
+                class="fv-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#debitForm"
+                aria-controls="debitForm"
+              >
+                <span class="material-icons"> add </span>
+                Debit
+              </button>
+
+              <button
+                class="fv-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#topUpForm"
+                aria-controls="topUpForm"
+              >
+                <span class="material-icons"> add </span>
+                Top Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fv-section-content fv-align-start fv-justify-between">
+        <div class="fv-profile-card-wrapper">
+          <div class="fv-profile-card fv-w-100">
+            <img class="fv-img-rounded" src="../assets/profile.jpg" alt="" />
+
+            <div class="fv-profile-card-section fv-mt-3">
+              <p class="fv-profile-card-label">Name</p>
+              <p>Jane Doe</p>
+            </div>
+
+            <div class="fv-profile-card-section">
+              <p class="fv-profile-card-label">User ID</p>
+              <p>Flo123456</p>
+            </div>
+
+            <div class="fv-profile-card-section">
+              <p class="fv-profile-card-label">Email</p>
+              <p>janedoe@gmail.com</p>
+            </div>
+
+            <div class="fv-profile-card-section">
+              <p class="fv-profile-card-label">Wallet ID</p>
+              <p>Providus Bank: 3678277583</p>
+              <button class="fv-btn fv-btn-link">Revoke</button>
+            </div>
+
+            <div class="fv-profile-card-section">
+              <p class="fv-profile-card-label">Wema Bank</p>
+              <p>3678277583</p>
+              <button class="fv-btn fv-btn-link">Revoke</button>
+            </div>
+          </div>
+
+          <div class="fv-profile-card fv-w-100 fv-align-start">
+            <small class="fv-text-gray-4">Block/UnBlock this User</small>
+            <div class="fv-d-flex fv-w-100 fv-justify-between">
+              <p class="fv-text-primary fv-text-bold">Block</p>
+
+              <label class="fv-switch">
+                <input type="checkbox" />
+                <span class="fv-slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fv-data-card-noBg">
+          <div class="fv-section">
+            <div class="fv-section-header">
+              <h6>Wallet Balance</h6>
+
+              <button class="fv-btn fv-btn-link">Set Transaction Limit</button>
+            </div>
+
+            <div class="fv-section-banner">
+              <h3>#1.3M</h3>
+              <p>Current Wallet Balance</p>
+            </div>
+
+            <button class="fv-btn fv-btn-full">WITHDRAW FUNDS</button>
+          </div>
+
+          <div class="fv-section">
+            <div class="fv-section-body-alt">
+              <div class="fv-section-item fv-text-gray-4">
+                <h6>INTEREST</h6>
+                <label class="fv-switch">
+                  <input type="checkbox" />
+                  <span class="fv-slider"></span>
+                </label>
+              </div>
+
+              <div class="fv-section-item fv-text-gray-4">
+                <h6>AUTOSAVE</h6>
+                <label class="fv-switch">
+                  <input type="checkbox" />
+                  <span class="fv-slider"></span>
+                </label>
+              </div>
+
+              <div class="fv-section-item fv-text-gray-4">
+                <h6>MUTE/UNMUTE</h6>
+                <label class="fv-switch">
+                  <input type="checkbox" />
+                  <span class="fv-slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="fv-section">
+            <div class="fv-section-header">
+              <h6>Create Savings and Investments</h6>
+            </div>
+            <div class="fv-btn-group">
+              <button class="fv-btn fv-btn-full">Add Savings</button>
+              <button class="fv-btn fv-btn-full">Add Investments</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fv-cards-section">
+        <div class="fv-table-tab-card">
+          <div class="fv-section-header">
+            <h5>Wallet</h5>
+          </div>
+          <div class="fv-section-body">
+            <div class="fv-table-tab-card-group">
+              <div class="fv-table-tab-card-item">
+                <small>Account Number</small>
+                <p>0858748375</p>
+              </div>
+
+              <div class="fv-table-tab-card-item">
+                <small>Bank Name</small>
+                <p>Access Bank</p>
+              </div>
+            </div>
+
+            <button class="fv-btn">Revoke</button>
+          </div>
+
+          <div class="fv-section-body">
+            <div class="fv-table-tab-card-group">
+              <div class="fv-table-tab-card-item">
+                <small>Account Number</small>
+                <p>35645268636</p>
+              </div>
+
+              <div class="fv-table-tab-card-item">
+                <small>Expiring Date</small>
+                <p>04/2024</p>
+              </div>
+            </div>
+
+            <button class="fv-btn">Revoke</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="fv-cards-section">
+        <div class="fv-cards-section-bg">
+          <h5 class="fv-p-1">Recent Activities</h5>
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <input type="checkbox" />
+                  </th>
+                  <th scope="col">Transactions</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>transfer from John doe to Jane doe</td>
+                  <td>#2,000.00</td>
+                  <td>
+                    <span class="fv-status-badge fv-status-badge-success">
+                      Success
+                    </span>
+                  </td>
+                  <td>Jun 22, 2024</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>transfer from John doe to Jane doe</td>
+                  <td>#2,000.00</td>
+                  <td>
+                    <span class="fv-status-badge fv-status-badge-warning">
+                      Pending
+                    </span>
+                  </td>
+                  <td>Jun 22, 2024</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>transfer from John doe to Jane doe</td>
+                  <td>#2,000.00</td>
+                  <td>
+                    <span class="fv-status-badge fv-status-badge-success">
+                      Success
+                    </span>
+                  </td>
+                  <td>Jun 22, 2024</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>transfer from John doe to Jane doe</td>
+                  <td>#2,000.00</td>
+                  <td>
+                    <span class="fv-status-badge fv-status-badge-danger">
+                      Failed
+                    </span>
+                  </td>
+                  <td>Jun 22, 2024</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- offcanvas section -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="topUpForm"
+        aria-labelledby="topUpFormLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="fv-text-primary">Top Up Flo Wallet Savings</h5>
+        </div>
+        <div class="offcanvas-body">
+          <p class="fv-text-primary fv-my-1">
+            Top Up Flo Wallet Savings for User
+          </p>
+
+          <form class="fv-form fv-mt-1" action="#">
+            <div class="fv-form-group">
+              <label for="">User ID</label>
+              <div class="fv-form-input">
+                <input
+                  class="fv-input fv-pl-1"
+                  type="text"
+                  placeholder="Enter User Id"
+                />
+              </div>
+            </div>
+
+            <div class="fv-form-group">
+              <label for="">Amount</label>
+              <div class="fv-form-input">
+                <input class="fv-input fv-pl-1" type="text" placeholder="#" />
+              </div>
+            </div>
+
+            <div class="fv-d-flex fv-my-2 fv-gap-1 fv-w-100">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                class="fv-btn fv-btn-full fv-btn-outline"
+              >
+                CANCEL
+              </button>
+              <button class="fv-btn fv-btn-full">TOP UP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end page content -->
+    </main>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
